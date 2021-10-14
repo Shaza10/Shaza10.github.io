@@ -85,11 +85,11 @@ function component(width, height, color, x, y) {
 function updateGameArea() {
     myGameArea.clear();
     redGamePiece.update();
-    redGamePiece.x += 2;
+    redGamePiece.x += 1;
     yellowGamePiece.update(); 
-    yellowGamePiece.x += 1;
+    yellowGamePiece.x -= 1;
     blueGamePiece.update();
-    blueGamePiece.x += 3;
+    blueGamePiece.x += 1;
 }
 </script>
 <p>Three components on one game area.</p>
