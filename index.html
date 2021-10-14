@@ -52,7 +52,7 @@ var redGamePiece, blueGamePiece, yellowGamePiece;
 function startGame() {
     redGamePiece = new component(75, 75, "red", 10, 10);
     yellowGamePiece = new component(75, 75, "yellow", 50, 60);    
-    blueGamePiece = new component(75, 75, "blue", 10, 110);
+    blueGamePiece = new component(75, 75, "blue", 30, 40);
     myGameArea.start();
 }
 
@@ -87,7 +87,7 @@ function updateGameArea() {
     redGamePiece.update();
     redGamePiece.x += 1;
     yellowGamePiece.update(); 
-    yellowGamePiece.x -= 1;
+    yellowGamePiece.x += 1;
     blueGamePiece.update();
     blueGamePiece.x += 1;
 }
